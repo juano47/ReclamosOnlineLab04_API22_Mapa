@@ -161,6 +161,6 @@ public class ReclamoDaoHTTP implements ReclamoDao {
 
     @Override
     public void borrar(Reclamo r) {
-
+        cliente.delete("reclamo",r.getId());
     }
 }

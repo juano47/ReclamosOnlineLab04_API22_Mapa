@@ -96,11 +96,16 @@ public class MainActivity extends AppCompatActivity {
             }
             else if (requestCode == EDITAR_RECLAMO) {
                 //
+                String op = data.getStringExtra("OPERACION");
+                if(op == "EDITAR"){
                 daoReclamo.actualizar(r);
                 Toast.makeText(MainActivity.this,"Reclamo editado",Toast.LENGTH_LONG);
-            }
-            else {
+                }
+                else{
 
+            //Eliminar reclamo
+                daoReclamo.borrar(r);
+                Toast.makeText(MainActivity.this,"Reclamo eliminado",Toast.LENGTH_LONG);
             }
 
             Runnable runnable = new Runnable() {
@@ -122,5 +127,6 @@ public class MainActivity extends AppCompatActivity {
             t.start();
 
         }
+    }
     }
 }

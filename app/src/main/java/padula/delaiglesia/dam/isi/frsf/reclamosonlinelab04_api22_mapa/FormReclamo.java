@@ -85,6 +85,9 @@ public class FormReclamo extends AppCompatActivity {
                 frmReclamoSpinner.setSelection(pos);
 
             }
+            else{
+                btnEliminar.setEnabled(false);
+            }
 
         }
 
@@ -131,6 +134,7 @@ public class FormReclamo extends AppCompatActivity {
 
                 Intent resultado = getIntent();
                 resultado.putExtra("RECLAMO",nuevoReclamo );
+                resultado.putExtra("OPERACION","EDITAR");
                 resultado.putExtra("RESULTADO","OK" );
                 setResult(RESULT_OK, resultado);
                 finish();
@@ -142,7 +146,12 @@ public class FormReclamo extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                //seguir aca
+                Intent resultado = getIntent();
+                resultado.putExtra("RECLAMO",nuevoReclamo );
+                resultado.putExtra("OPERACION","ELIMINAR");
+                resultado.putExtra("RESULTADO","OK" );
+                setResult(RESULT_OK, resultado);
+                finish();
             }
         });
     }

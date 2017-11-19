@@ -124,7 +124,7 @@ public class MyGenericHTTPClient {
 
 
     public String getAll(String recurso) {
-        HttpURLConnection urlConnection = null;
+               HttpURLConnection urlConnection = null;
         DataOutputStream printout =null;
         StringBuilder sb = new StringBuilder();
 
@@ -198,6 +198,39 @@ public class MyGenericHTTPClient {
             if(urlConnection !=null)urlConnection.disconnect();
         }
         return sb.toString();
+    }
+
+
+    public void delete(String recurso, Integer id){
+        //StringBuilder sb = new StringBuilder();
+
+        HttpURLConnection urlConnection = null;
+        DataOutputStream printout =null;
+        try {
+            URL url = new URL(this.serverAddress+"/"+recurso+"/"+id);
+            urlConnection = (HttpURLConnection) url.openConnection();
+            urlConnection.setChunkedStreamingMode(0);
+            urlConnection.setRequestProperty("Content-Type","application/json");
+            urlConnection.setRequestMethod("DELETE");
+            urlConnection.setUseCaches(false);
+
+            int response = urlConnection.getResponseCode();
+
+
+
+        } catch (ProtocolException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if(printout!=null) try {
+                printout.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            if(urlConnection !=null)urlConnection.disconnect();
+        }
+
     }
 
 
