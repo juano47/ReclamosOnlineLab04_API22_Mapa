@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.LatLng;
@@ -25,6 +26,7 @@ public class FormReclamo extends AppCompatActivity {
 
     EditText frmReclamoTitulo;
     EditText frmReclamoDetalle;
+    TextView lugarReclamoTextView;
     Spinner frmReclamoSpinner;
     Button btnGuardar;
     Button btnelegirLugar;
@@ -34,6 +36,7 @@ public class FormReclamo extends AppCompatActivity {
     List<TipoReclamo> tipoReclamos;
     ArrayAdapter adapterTiposReclamos;
     Integer req;
+    public static Integer LUGAR_FROM_MAPA = 3432;
     Reclamo nuevoReclamo = new Reclamo();
 
     private GoogleMap mapa;
@@ -50,6 +53,8 @@ public class FormReclamo extends AppCompatActivity {
         frmReclamoTitulo = (EditText) findViewById(R.id.frmReclamoTextReclamo);
         frmReclamoDetalle = (EditText) findViewById(R.id.frmReclamoTextDetReclamo);
         frmReclamoSpinner = (Spinner) findViewById(R.id.frmReclamoCmbTipo);
+        lugarReclamoTextView = (TextView) findViewById(R.id.frmReclamoLblLugar);
+
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
@@ -66,6 +71,8 @@ public class FormReclamo extends AppCompatActivity {
                 nuevoReclamo = r;
                 frmReclamoTitulo.setText(r.getTitulo());
                 frmReclamoDetalle.setText(r.getDetalle());
+                lugarReclamoTextView.setText(r.getUbicacion().toString());
+
                 Integer pos = 0;
 
                 //Un for para esto? Java es crueldad
@@ -78,6 +85,7 @@ public class FormReclamo extends AppCompatActivity {
                 frmReclamoSpinner.setSelection(pos);
 
             }
+
         }
 
         btnelegirLugar.setOnClickListener(new View.OnClickListener(){
@@ -86,7 +94,9 @@ public class FormReclamo extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent abrirMapa = new Intent(FormReclamo.this, MapsActivity.class);
-                startActivity(abrirMapa);
+                abrirMapa.putExtra("LUGAR", nuevoReclamo.getUbicacion());
+
+                startActivityForResult(abrirMapa,LUGAR_FROM_MAPA);
 
             }
         });
@@ -111,7 +121,7 @@ public class FormReclamo extends AppCompatActivity {
                 nuevoReclamo.setDetalle( frmReclamoDetalle.getText().toString());
                 nuevoReclamo.setTipo( (TipoReclamo) frmReclamoSpinner.getSelectedItem());
                 nuevoReclamo.setEstado( daoHTTP.getEstadoById(1));
-                nuevoReclamo.setUbicacion(new LatLng(-180, 180));
+                //nuevoReclamo.setUbicacion(new LatLng(-180, 180));
 
                 if(req != MainActivity.EDITAR_RECLAMO){
                 nuevoReclamo.setFecha( new Date());
@@ -135,5 +145,19 @@ public class FormReclamo extends AppCompatActivity {
                 //seguir aca
             }
         });
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+            if((requestCode == LUGAR_FROM_MAPA) && (resultCode == RESULT_OK)){
+                recibirLugarDesdeMapa(data);
+        }
+    }
+
+    private void recibirLugarDesdeMapa(Intent data) {
+        LatLng lugar = data.getParcelableExtra("LUGAR_DESDE_MAPA");
+        nuevoReclamo.setUbicacion(lugar);
+        lugarReclamoTextView.setText(lugar.toString());
     }
 }

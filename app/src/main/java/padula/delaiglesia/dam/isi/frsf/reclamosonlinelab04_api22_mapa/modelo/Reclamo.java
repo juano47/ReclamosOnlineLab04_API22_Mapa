@@ -27,8 +27,10 @@ public class Reclamo implements Parcelable {
 
     // private foto
     // private audio
-    public Reclamo() {
+    public  Reclamo(){
+        this.setUbicacion(new LatLng(-31.636050, -60.701071)); //Por default
     }
+
 
     public Reclamo(Parcel in){
         this.id = in.readInt();
@@ -47,7 +49,7 @@ public class Reclamo implements Parcelable {
         this.fecha = fecha;
         this.tipo = tipo;
         this.estado = estado;
-        this.setUbicacion(new LatLng(-180, 180)); //Por default hasta que arreglemos lo del mapa
+        this.setUbicacion(new LatLng(-31.636050, -60.701071)); //Por default
     }
 
     public Reclamo(Integer id, String titulo, String detalle, Date fecha, TipoReclamo tipo, Estado estado, LatLng ubicacion) {
@@ -59,6 +61,7 @@ public class Reclamo implements Parcelable {
         this.estado = estado;
         this.setUbicacion(ubicacion);
     }
+
 
 
     public Integer getId() {

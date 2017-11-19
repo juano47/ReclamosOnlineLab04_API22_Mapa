@@ -31,7 +31,8 @@ public class ReclamoDaoHTTP implements ReclamoDao {
         //server="http://10.0.2.2:3000";
 
         //para celular
-        server="http://192.168.42.29:3000";
+        //server="http://192.168.42.29:3000";
+        server = "http://192.168.0.107:3000"; //(nico)
         cliente = new MyGenericHTTPClient(server);
     }
 
@@ -100,7 +101,7 @@ public class ReclamoDaoHTTP implements ReclamoDao {
                 }
                 catch (Exception ex)
                 {
-                    recTmp.setUbicacion(new LatLng(-180, 180));
+                    recTmp.setUbicacion(new LatLng(-31.636050, -60.701071));
                 }
                 listaReclamos.add(recTmp);
             }

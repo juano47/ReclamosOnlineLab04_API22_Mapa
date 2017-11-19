@@ -94,10 +94,13 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(MainActivity.this,"Reclamo creado",Toast.LENGTH_LONG);
             }
-            else {
+            else if (requestCode == EDITAR_RECLAMO) {
                 //
                 daoReclamo.actualizar(r);
                 Toast.makeText(MainActivity.this,"Reclamo editado",Toast.LENGTH_LONG);
+            }
+            else {
+
             }
 
             Runnable runnable = new Runnable() {
