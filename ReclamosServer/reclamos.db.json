@@ -269,6 +269,15 @@
       "estadoId": 1,
       "latitud": -31.63605,
       "longitud": -60.701071
+    },
+    {
+      "id": 34,
+      "titulo": "Grabación test ",
+      "detalle": "",
+      "tipoId": 1,
+      "estadoId": 1,
+      "latitud": -31.63605,
+      "longitud": -60.701071
     }
   ],
   "tipo": [
