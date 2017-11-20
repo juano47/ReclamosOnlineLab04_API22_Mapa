@@ -1,0 +1,301 @@
+{
+  "reclamo": [
+    {
+      "id": 3,
+      "titulo": "Todo oscuro esto es un peligro",
+      "detalle": "consequuntur magni dolores eos qui ratione voluptatem sequi",
+      "tipoId": 5,
+      "estadoId": 4,
+      "latitud": -31.63605,
+      "longitud": -60.701071
+    },
+    {
+      "id": 4,
+      "titulo": "No pasa el colectivo",
+      "detalle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed ",
+      "fecha": "",
+      "tipoId": 6,
+      "estadoId": 2,
+	  "latitud": -31.65605,
+      "longitud": -60.201071
+    },
+    {
+      "id": 5,
+      "titulo": "Todo oscuro esto es un peligro",
+      "detalle": "consequuntur magni dolores eos qui ratione voluptatem sequi",
+      "tipoId": 7,
+      "estadoId": 4,
+      "latitud": -31.13605,
+      "longitud": -60.801071
+    },
+    {
+      "id": 6,
+      "titulo": "Faltan camaras",
+      "detalle": "consequuntur magni dolores eos qui ratione voluptatem sequi",
+      "fecha": "",
+      "tipoId": 2,
+      "estadoId": 3,
+	  "latitud": -30,
+      "longitud": -59
+    },
+    {
+      "id": 7,
+      "titulo": "Todo oscuro esto es un peligro",
+      "detalle": "consequuntur magni dolores eos qui ratione voluptatem sequi",
+      "tipoId": 1,
+      "estadoId": 1,
+      "latitud": -32.63605,
+      "longitud": -63.01071
+    },
+    {
+      "id": 8,
+      "titulo": "La parada de colectivo no tiene techo",
+      "detalle": "consequuntur magni dolores eos qui ratione voluptatem sequiii",
+      "tipoId": 1,
+      "estadoId": 1,
+	  "latitud": -31.43605,
+      "longitud": -60.401071
+    },
+    {
+      "id": 9,
+      "titulo": "El tobogan sube y no baja",
+      "detalle": "consequuntur magni dolores eos qui ratione voluptatem sequi",
+      "tipoId": 3,
+      "estadoId": 1,
+      "latitud": -31.63605,
+      "longitud": -60.701071
+    },
+    {
+      "id": 10,
+      "titulo": "Expound the actual teachings",
+      "detalle": "consequuntur magni dolores eos qui ratione voluptatem sequi",
+      "tipoId": 1,
+      "estadoId": 1,
+      "latitud": -31.63605,
+      "longitud": -60.701071
+    },
+    {
+      "id": 11,
+      "titulo": "Pellentesque tortor magna.",
+      "detalle": "Pellentesque tortor magna magni dolores eos qui ratione voluptatem sequi",
+      "fecha": "",
+      "tipoId": 1,
+      "estadoId": 1,	  
+	  "latitud": -33.93605,
+      "longitud": -636201071
+    },
+    {
+      "id": 12,
+      "titulo": "El tobogan sube y no baja",
+      "detalle": "consequuntur magni dolores eos qui ratione voluptatem sequi",
+      "fecha": "",
+      "tipoId": 1,
+      "estadoId": 1,	  
+	  "latitud": -34.03605,
+      "longitud": -60.201071
+    },
+    {
+      "id": 13,
+      "titulo": " Nullam ultricies sapien odio,",
+      "detalle": "c ac. Etiam tempus metus nec fui",
+      "fecha": "",
+      "tipoId": 4,
+      "estadoId": 2,	  
+	  "latitud": -33.93605,
+      "longitud": -64.201071
+    },
+    {
+      "id": 14,
+      "titulo": "La calesita no gira",
+      "detalle": "consequuntur magni dolores eos qui ratione voluptatem sequi",
+      "fecha": "",
+      "tipoId": 6,
+      "estadoId": 1,
+	  "latitud": -30.93605,
+      "longitud": -63.201071
+    },
+    {
+      "id": 15,
+      "titulo": "La ciclovia esta siempre colapsada",
+      "detalle": "consequuntur magni dolores eos qui ratione voluptatem sequi",
+      "fecha": "",
+      "tipoId": 5,
+      "estadoId": 1,
+	  "latitud": -29.63605,
+      "longitud": -63.701071
+    },
+    {
+      "id": 16,
+      "titulo": "test",
+      "detalle": "testest",
+      "tipoId": 1,
+      "estadoId": 1,
+      "fecha": "Sat Nov 04 14:58:34 GMT-03:00 2017",
+	  "latitud": -31.63605,
+      "longitud": -70.701071
+    },
+    {
+      "id": 17,
+      "titulo": "asdasd",
+      "detalle": "afsadfasdfasdf",
+      "tipoId": 1,
+      "estadoId": 1,
+      "fecha": "Sat Nov 04 15:45:15 GMT-03:00 2017",
+	  "latitud": -30.63605,
+      "longitud": -52.701071
+    },
+    {
+      "id": 18,
+      "titulo": "asdasd",
+      "detalle": "asdads",
+      "tipoId": 1,
+      "estadoId": 1,
+      "fecha": "Sat Nov 04 17:31:23 GMT-03:00 2017",
+	  "latitud": -27.63605,
+      "longitud": -62.301071
+    },
+    {
+      "id": 19,
+      "titulo": "dsfgdfghfghfhfjhfghjg",
+      "detalle": "hjgjghjghj",
+      "tipoId": 1,
+      "estadoId": 1,
+      "fecha": "Sat Nov 04 17:31:49 GMT-03:00 2017",
+	  "latitud": -31.63605,
+      "longitud": -56.901071
+    },
+    {
+      "id": 20,
+      "titulo": "traaaaa",
+      "detalle": "",
+      "tipoId": 7,
+      "estadoId": 1,
+      "fecha": "Sat Nov 04 18:10:28 GMT-03:00 2017",
+	  "latitud": -28.33605,
+      "longitud": -60.701071
+    },
+    {
+      "id": 21,
+      "titulo": "semaforo en rojo",
+      "detalle": "asd",
+      "tipoId": 5,
+      "estadoId": 1,
+	  "latitud": -37.63605,
+      "longitud": -60.701071
+    },
+    {
+      "id": 22,
+      "titulo": "dale vieja",
+      "detalle": "dale",
+      "tipoId": 1,
+      "estadoId": 1,
+      "fecha": "Thu Nov 09 20:15:31 GMT-03:00 2017",
+	  "latitud": -27.63605,
+      "longitud": -60.701071
+    },
+    {
+      "id": 25,
+      "titulo": "Lal",
+      "detalle": "",
+      "tipoId": 1,
+      "estadoId": 1,
+      "fecha": "Sun Nov 19 19:08:08 GMT-03:00 2017",
+      "latitud": -31.63605,
+      "longitud": -50.701071
+    },
+    {
+      "id": 26,
+      "titulo": "Asd",
+      "detalle": "",
+      "tipoId": 1,
+      "estadoId": 1,
+      "latitud": -31.9,
+      "longitud": -60.701071
+    },
+    {
+      "id": 28,
+      "titulo": "Gghvhhhvhhhbbhh",
+      "detalle": "",
+      "tipoId": 1,
+      "estadoId": 1,
+      "fecha": "Sun Nov 19 19:14:11 GMT-03:00 2017",
+      "latitud": -31.63605,
+      "longitud": -69.701071
+    },
+    {
+      "id": 29,
+      "titulo": "Hhhhhhhhhhhtttgt",
+      "detalle": "",
+      "tipoId": 1,
+      "estadoId": 1,
+      "latitud": -31.63605,
+      "longitud": -57.701071
+    },
+    {
+      "id": 30,
+      "titulo": "P",
+      "detalle": "",
+      "tipoId": 1,
+      "estadoId": 1,
+      "fecha": "Sun Nov 19 19:35:34 GMT-03:00 2017",
+      "latitud": -27.63605,
+      "longitud": -60.701071
+    }
+  ],
+  "tipo": [
+    {
+      "id": 1,
+      "tipo": "Baches"
+    },
+    {
+      "id": 2,
+      "tipo": "Basura"
+    },
+    {
+      "id": 3,
+      "tipo": "Semaforo"
+    },
+    {
+      "id": 4,
+      "tipo": "Reductor Velocidad"
+    },
+    {
+      "id": 5,
+      "tipo": "Peligro Derrumbe"
+    },
+    {
+      "id": 6,
+      "tipo": "Arreglo en Plaza"
+    },
+    {
+      "id": 7,
+      "tipo": "Tramites"
+    },
+    {
+      "id": 8,
+      "tipo": "Otros"
+    }
+  ],
+  "estado": [
+    {
+      "id": 1,
+      "tipo": "Enviado"
+    },
+    {
+      "id": 2,
+      "tipo": "Aceptado"
+    },
+    {
+      "id": 3,
+      "tipo": "En Arreglo"
+    },
+    {
+      "id": 4,
+      "tipo": "Rechazado"
+    },
+    {
+      "id": 5,
+      "tipo": "Finalizado"
+    }
+  ]
+}

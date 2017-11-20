@@ -98,6 +98,7 @@ public class FormReclamo extends AppCompatActivity {
 
                 Intent abrirMapa = new Intent(FormReclamo.this, MapsActivity.class);
                 abrirMapa.putExtra("LUGAR", nuevoReclamo.getUbicacion());
+                abrirMapa.putExtra("REQUEST_CODE",LUGAR_FROM_MAPA);
 
                 startActivityForResult(abrirMapa,LUGAR_FROM_MAPA);
 
@@ -124,7 +125,6 @@ public class FormReclamo extends AppCompatActivity {
                 nuevoReclamo.setDetalle( frmReclamoDetalle.getText().toString());
                 nuevoReclamo.setTipo( (TipoReclamo) frmReclamoSpinner.getSelectedItem());
                 nuevoReclamo.setEstado( daoHTTP.getEstadoById(1));
-                //nuevoReclamo.setUbicacion(new LatLng(-180, 180));
 
                 if(req != MainActivity.EDITAR_RECLAMO){
                 nuevoReclamo.setFecha( new Date());

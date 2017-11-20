@@ -17,10 +17,26 @@
         android:layout_height="wrap_content"
         android:layout_weight="1">
     </ListView>
-    <Button
-        android:id="@+id/btnNuevoReclamo"
-        android:text="Nuevo Reclamo!"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btnNuevoReclamo"
+            android:text="Nuevo Reclamo!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnVerReclamos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visualizar en Mapa"
+            android:layout_weight="0.30" />
+    </LinearLayout>
+
 
 </LinearLayout>
