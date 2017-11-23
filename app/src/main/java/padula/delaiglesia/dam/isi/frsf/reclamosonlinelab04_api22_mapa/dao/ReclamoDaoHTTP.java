@@ -31,8 +31,8 @@ public class ReclamoDaoHTTP implements ReclamoDao {
         //server="http://10.0.2.2:3000";
 
         //para celular
-        //server="http://192.168.42.29:3000";
-        server = "http://192.168.0.107:3000"; //(nico)
+        server="http://192.168.42.100:3000";
+        //server = "http://192.168.0.107:3000"; //(nico)
         cliente = new MyGenericHTTPClient(server);
     }
 

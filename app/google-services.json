@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "182029049316",
+    "firebase_url": "https://lab04-jdli-np.firebaseio.com",
+    "project_id": "lab04-jdli-np",
+    "storage_bucket": "lab04-jdli-np.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182029049316:android:fa2c22456a3c86aa",
+        "android_client_info": {
+          "package_name": "padula.delaiglesia.dam.isi.frsf.reclamosonlinelab04_api22_mapa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "182029049316-22sse8lgf18agntongm8m4mr07vkvr8a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIZiY5WghBVYm2SyD4tV5f--qNgsjKWhY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

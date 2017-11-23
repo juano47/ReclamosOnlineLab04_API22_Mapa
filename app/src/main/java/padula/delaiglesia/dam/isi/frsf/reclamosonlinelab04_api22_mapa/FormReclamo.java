@@ -16,6 +16,7 @@ import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -121,7 +122,39 @@ public class FormReclamo extends AppCompatActivity {
                 checkAndRetrieveImage();
                 checkAudio();
             }
-            else{
+
+            if(req == ReclamosPushService.BUSCAR_Y_EDITAR){
+
+                Reclamo r= new Reclamo();
+                int idReclamo = i.getIntExtra("ID_RECLAMO", -1);
+                List <Reclamo> reclamosList = daoHTTP.reclamos();
+                for (int k=0; k<reclamosList.size(); k++){
+                    if(reclamosList.get(k).getId() == idReclamo) {
+                        r = reclamosList.get(k);
+                        break;
+                    }
+
+                }
+                nuevoReclamo = r;
+                frmReclamoTitulo.setText(r.getTitulo());
+                frmReclamoDetalle.setText(r.getDetalle());
+                lugarReclamoTextView.setText(r.getUbicacion().toString());
+
+                Integer pos = 0;
+
+                //Un for para esto? Java es crueldad
+                for(TipoReclamo t: tipoReclamos){
+                    if(t.getId() == r.getTipo().getId())
+                        break;
+                    pos++;
+                }
+
+                frmReclamoSpinner.setSelection(pos);
+
+                checkAndRetrieveImage();
+                checkAudio();
+            }
+            if(req == -1){
                 btnEliminar.setEnabled(false);
             }
 
